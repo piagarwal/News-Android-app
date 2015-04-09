@@ -1,22 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
 
     <TextView
         android:id="@+id/newHeadlineTextView"
-        android:layout_weight="1"
+
         android:layout_width="wrap_content"
         android:inputType="none|textMultiLine"
+        android:layout_height="wrap_content"
 
-        android:clickable="true"
+
+        android:clickable="false"
         android:textSize="20sp"
-        android:layout_marginBottom="5dp"
-        android:focusable="true"
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="sdsads"
         android:textColor="#000000"
+
+
 
         />
 
 
-</TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="source"
+            android:layout_below="@+id/newHeadlineTextView"
+            android:id="@+id/sourceTextView"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="source"
+        android:layout_below="@+id/sourceTextView"
+        android:id="@+id/dateTextView"
+        android:layout_marginBottom="5dp"
+
+
+        />
+
+
+</RelativeLayout>
+
+
+
+
+
